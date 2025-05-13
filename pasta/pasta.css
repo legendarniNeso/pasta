@@ -1,4 +1,4 @@
-#logotip {
+#frame {
   top: 10px;
   left: 10px;
   /*270px / 400px*/
@@ -10,7 +10,7 @@
 
 }
 
-#uvijac {
+#curler {
   width: 10%;
   height: 10%;
   background: conic-gradient(at 100% 30%, #131b23, #e9f1f7);
@@ -20,7 +20,7 @@
   left: 0px;
 }
 
-#rucicaDole {
+#leverDown {
   width: 10%;
   height: 0;
   top: 45.3%;
@@ -29,14 +29,14 @@
   /*76px / 120px*/
   background: conic-gradient(at 100% 0%, #e9f1f7, #131b23);
   position: absolute;
-  animation-name: animacijaRuciceDole;
+  animation-name: animationLeverDown;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-delay: 2.5s;
   animation-timing-function: linear;
 }
 
-@keyframes animacijaRuciceDole {
+@keyframes animationLeverDown {
   0% {
     height: 0%;
   }
@@ -54,20 +54,20 @@
   }
 }
 
-#rucica {
+#lever {
   width: 20%;
   height: 7.5%;
   left: 63.33%;
   /*76px / 120px*/
   background: conic-gradient(at 100% 0%, #e9f1f7, #131b23);
   position: absolute;
-  animation-name: animacijaRucice;
+  animation-name: animationLever;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes animacijaRucice {
+@keyframes animationLever {
   0% {
     top: 45.3%;
     /*48px / 106px*/
@@ -100,7 +100,7 @@
   }
 }
 
-#rucicaGore {
+#leverUp {
   width: 6.67%;
   /*8px / 120px*/
   height: 45.28%;
@@ -109,13 +109,13 @@
   /*76px / 120px*/
   background: conic-gradient(at 100% 0%, #5a5e5d, #3c3e3e);
   position: absolute;
-  animation-name: animacijaRuciceGore;
+  animation-name: animationLeverUp;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes animacijaRuciceGore {
+@keyframes animationLeverUp {
   0% {
     height: 0%;
     top: 45.3%;
@@ -141,7 +141,7 @@
   }
 }
 
-#osovina {
+#axis {
   width: 20%;
   /*24px / 120px*/
   height: 7.547%;
@@ -154,7 +154,7 @@
   position: absolute;
 }
 
-#telo {
+#body {
   width: 40%;
   /*48px / 120px*/
   height: 26.5%;
@@ -168,7 +168,7 @@
   position: absolute;
 }
 
-#stalak {
+#stand {
   width: 6.66%;
   /*8px / 120px*/
   height: 37.74%;
@@ -181,7 +181,7 @@
   position: absolute;
 }
 
-#testeninaUlaz {
+#pastaEntrance {
   width: 27.5%;
   /*33px / 120px*/
   height: 36.32%;
@@ -194,48 +194,48 @@
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
-.seckanoTesto {
+.choppedPasta {
   width: 3.333%;
   /*4px / 120px*/
   background: conic-gradient(at 0% 0%, #ffbd00, #f7b2ad);
   position: absolute;
 }
 
-#testeninaJedan,
-#testeninaTri {
+#pastaOne,
+#pastaThree {
   top: 62.26%;
   /*66px / 106px*/
-  animation: animacijaTestaDva 4s ease-in-out 0s infinite normal none;
+  animation: animationPastaSecond 4s ease-in-out 0s infinite normal none;
 }
 
-#testeninaJedan {
+#pastaOne {
   left: 16.67%;
   /*20px / 120px*/
 }
 
-#testeninaTri {
+#pastaThree {
   left: 33.33%;
   /*40px / 120px*/
 }
 
-#testeninaDva,
-#testeninaCetiri {
+#pastaTwo,
+#pastaFour {
   top: 62.26%;
   /*66px / 106px*/
-  animation: animacijaTesta 4s ease-in-out 0s infinite normal none;
+  animation: animationPasta 4s ease-in-out 0s infinite normal none;
 }
 
-#testeninaDva {
+#pastaTwo {
   left: 25%;
   /*30px / 120px*/
 }
 
-#testeninaCetiri {
+#pastaFour {
   left: 41.666%;
   /*50px / 120px*/
 }
 
-@keyframes animacijaTesta {
+@keyframes animationPasta {
   0% {
     height: 0px;
     top: 62.26%;
@@ -255,7 +255,7 @@
   }
 }
 
-@keyframes animacijaTestaDva {
+@keyframes animationPastaSecond {
   0% {
     height: 0px;
     top: 62.26%;
@@ -273,15 +273,4 @@
     height: 0%;
     top: 100%;
   }
-}
-
-.LogoOmotac {
-  height: 74.2px;
-  width: 280px;
-  /*400px*/
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-
-
 }
